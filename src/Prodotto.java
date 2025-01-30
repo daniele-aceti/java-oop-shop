@@ -28,7 +28,7 @@ public class Prodotto {
         return result;
     }
 
-   public String completeName(String name, int code){
+    public String completeName(String name, int code){
          this.name = name;
          this.code = code;
          String result = name + code;
