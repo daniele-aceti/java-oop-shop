@@ -1,28 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
-        
-        //codice random
-        Prodotto codeProdotto = new Prodotto();
-        int randomValue = codeProdotto.code(100);
-        System.out.println(randomValue);
 
+        Prodotto result = new Prodotto("cuffie", 100, 1.22);
+        System.out.println(result.code);
 
-         //prezzo base
-         Prodotto prezzoProdotto = new Prodotto();
-         int basicPrice = prezzoProdotto.price(100);
-         System.out.println(basicPrice); 
-    
+        System.out.println("Il nome è" + result.getNomeEsteso());
 
-         //iva
-         Prodotto ivaPrice = new Prodotto();
-         System.out.println( ivaPrice.iva(basicPrice));
-
-    
-         //nome completo 
-         Prodotto nameProdotto = new Prodotto();
-         System.out.println(nameProdotto.completeName("auto", randomValue));
-
+        System.out.println(String.format("Il prezzo base è %f , e quello con l'iva è   %f", result.getPrezzoBase(), result.getPrezzoiva()));
     }
-
 }

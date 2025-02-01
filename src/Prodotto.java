@@ -8,31 +8,33 @@ public class Prodotto {
 
     public String description;
 
-    public int price;
+    public double price;
 
-    public int iva;
+    public double iva;
 
+    public Prodotto(String name, double price, double iva){
+        calcolaCodice();
+        this.name = name;
+        this.price = price;
+        this.iva = iva;
+    }
 
    
-    public int code(int randomNumber){
+    public void calcolaCodice(){
         Random number = new Random();
-        return number.nextInt(randomNumber);
+        this.code = number.nextInt(1000, 100000);
     }
 
-    public int price(int value){
-         return value;
-    }
+   public double getPrezzoBase(){
+    return this.price;
+   }
 
-    public int iva(int price){
-        int result = price -((price * 22)/100);
-        return result;
-    }
+   public double getPrezzoiva(){
+    return this.price  * this.iva;
+   }
 
-    public String completeName(String name, int code){
-         this.name = name;
-         this.code = code;
-         String result = name + code;
-         return result;
+   public String getNomeEsteso(){
+     return this.code + "-" + this.name;
    }
  
     }
