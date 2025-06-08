@@ -1,18 +1,38 @@
-## Getting Started
+# 🛍️ OOP Shop - Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+📅 Ultimo aggiornamento 01/02/2025
 
-## Folder Structure
+**Java** • **OOP** • **Classi e Oggetti** • **Console App**
 
-The workspace contains two folders by default, where:
+> Applicazione console realizzata in Java per simulare un semplice sistema di gestione prodotti, sfruttando la programmazione ad oggetti.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+---
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 🚀 Funzionalità principali
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- 📦 Creazione e gestione di prodotti con attributi:
+  - nome, descrizione, prezzo, IVA
+- 🆔 Generazione automatica di codice prodotto
+- 🔢 Calcolo prezzo lordo con IVA
+- 🔤 Nome esteso prodotto (codice + nome)
+- 🧪 Test funzionali tramite `main`
 
-## Dependency Management
+---
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🛠️ Stack Tecnologico
+
+- **Linguaggio:** Java
+- **Paradigma:** Programmazione a oggetti (OOP)
+- **Concetti usati:**
+  - classi, costruttori, metodi, `private`, `public`
+  - incapsulamento
+  - metodi getter/setter
+
+---
+
+📌 Note
+Questo progetto è stato sviluppato a scopo didattico con l’obiettivo di:
+
+consolidare i fondamenti della programmazione a oggetti
+
+imparare a strutturare e modellare classi in Java
